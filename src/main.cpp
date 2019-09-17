@@ -58,8 +58,10 @@ int main(int argc, const char **argv)
     float start_x, start_y, end_x, end_y;
     std::cout << "Enter x and y coordinates for the starting point: " << std::endl;
     std::cin >> start_x >> start_y;
+    std::cout << "Now enter the x and y coordinates for the ending route point: " << std::endl;
+    std::cin >> end_x >> end_y;
     if(start_x < 0 || start_y < 0 || end_x > 100 || end_y > 100) {
-      std::cout << "Coordinates must be in range 0 to 100, yo!" << std::endl;
+      std::cout << "Coordinates must be in range 0 to 100!" << std::endl;
       return 0;
     }
     // Build Model.
